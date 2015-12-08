@@ -1,0 +1,240 @@
+<section id="home">
+			<%= link_to image_tag( "logo.png", alt: "nimbl3 logo", class: "logo" ), root_path %>
+			<h3>we build <span>beautiful</span> apps </br>with <span>strong</span> cores</h3>
+			<ul class="home-social">
+				<li><%= link_to image_tag( "facebook_icon.png", alt: "facebook logo" ), '#' %></li>
+				<li><%= link_to image_tag( "twitter_icon.png", alt: "twitter logo" ), '#' %></li>
+				<li><%= link_to image_tag( "github_icon.png", alt: "github logo" ), '#' %>
+			</ul>
+			<p>Follow us</p>
+			<%= link_to '#contact', class: "start-project" do %>
+				<%= image_tag( "start_icon.png", alt: "start your project" )  %>
+				<span>Start your Project</span>
+			<% end %>
+</section>
+<div class="trapezoid-left"></div>
+<div class="wrapper">
+	<div class="container">
+		
+		<section id="about">
+			<div class="content">
+				<h2>We work as a start up</h2>
+				<ul>
+					<li>
+						<%= image_tag( "faster_iterations.png", alt: "faster_iterations" ) %>
+						<div>
+							<h5>Faster iterations</h5>
+							<p><%= @faster_iterations %></p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<%= image_tag( "flexible_model_iphone.png", alt: "iphone" ) %>
+							<%= image_tag( "flexible_model_ipad.png", alt: "ipad" ) %>
+						</div>
+						<div>
+							<h5>Flexible model</h5>
+							<p><%= @flexible_model %></p>
+						</div>
+					</li>
+					<li>
+						<%= image_tag( "transparency.png", alt: "transparency" ) %>
+						<div>
+							<h5>Transparency</h5>
+							<p><%= @transparency %></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="trapezoid-top"></div>
+		<section id="services">
+			<div class="content">
+				<h2>What we do</h2>
+				<div>
+					<%= image_tag( "imac.png", alt: "imac", class: "imac" ) %>
+					<div>
+						<h5>MVP For Startups</h5>
+						<p><%= @mvpforstartups %></p>
+					</div>
+				</div>
+				<div>
+					<%= image_tag( "ruby.png", alt: "ruby" ) %>
+					<div>
+						<h5>Ruby on Rails</h5>
+						<p><%= @rubyonrails %></p>
+					</div>
+				</div>
+				<div>
+					<%= image_tag( "phone.png", alt: "phone" ) %>
+					<div>
+						<h5>Mobile Apps</h5>
+						<p><%= @mobileapps %></p>
+					</div>
+				</div>
+				<div>
+					<%= image_tag( "target.png", alt: "target" ) %>
+					<div>
+						<h5>S.O.S.</h5>
+						<p><%= @sos %></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="works">
+			<div class="content">
+				<h2>Some startups </br>we have worked with</h2>
+				<ul>
+					<li>
+						<%= link_to '/' do %>
+							<span>Duriana</span>
+						<% end %>
+					</li>
+					<li>
+						<%= link_to '' do %>
+							<span>zeemi.tv</span>
+						<% end %>
+					</li>
+					<li>
+						<%= link_to '' do %>
+							<span>zeemi.tv</span>
+						<% end %>
+					</li>
+					<li>
+						<%= link_to '' do %>
+							<small>What's next?</small>
+						<% end %>
+					</li>
+				</ul>
+				<hr>
+				<div class="testimonials">
+					<span style="font-size:12em;font-family: serif;vertical-align: middle;">&#8220;</span>
+					<div>
+						<div>
+						<%= image_tag( "Jeremi-Renner.png", alt: "thumbnail" )  %>
+						</div>
+						<p>jeremi renner</p>
+						<i><small>ceo</small></i>
+					</div>
+					<span style="font-size:12em;font-family: serif;vertical-align: middle;">&#8221;</span>
+				</div>
+				<p><%= @jeremirenner %></p>
+			</div>
+		</section>
+		<div class="trapezoid-top-right"></div>
+		<section id="team">
+			<div class="content">
+				<h2>Team</h2>
+				<div>
+					<ul>
+						<li>
+							<div>
+								<div>
+								<%= image_tag( "team/olivier.jpg", alt: "thumbnail" )  %>
+								</div>
+								<p>Olivier Robert</p>
+								<i><small><%= @founder %></small></i>
+
+							</div>
+							<p><%= @team_desc %></p>
+						</li>
+						<li>
+							<div>
+								<div>
+								<%= image_tag( "team/carlos.jpg", alt: "thumbnail" )  %>
+								</div>
+								<p>carlos herrera</p>
+								<i><small><%= @founder %></small></i>
+
+							</div>
+							<p><%= @team_desc %></p>
+						</li>
+						<li>
+							<div>
+								<div>
+								<%= image_tag( "team/game.jpg", alt: "thumbnail" )  %>
+								</div>
+								<p>tawin supayanant</p>
+								<i><small><%= @dev %></small></i>
+
+							</div>
+							<p><%= @team_desc %></p>
+						</li>
+						<li>
+							<div>
+								<div>
+								<%= image_tag( "team/kiang.jpg", alt: "thumbnail" )  %>
+								</div>
+								<p>sarun rattanasiri</p>
+								<i><small><%= @softeng %></small></i>
+
+							</div>
+							<p><%= @team_desc %></p>
+						</li>
+						<li>
+							<div>
+								<div>
+								<%= image_tag( "team/s.jpg", alt: "thumbnail" )  %>
+								</div>
+								<p>prakarn wongsanit</p>
+								<i><small><%= @softeng %></small></i>
+
+							</div>
+							<p><%= @team_desc %></p>
+						</li>
+						<li>
+							<div>
+								<div>
+								<%= image_tag( "team/tin.jpg", alt: "thumbnail" )  %>
+								</div>
+								<p>supawich pruegsapraiboon</p>
+								<i><small><%= @des %></small></i>
+
+							</div>
+							<p><%= @team_desc %></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="trapezoid-bottom"></div>
+		<section id="contact">
+			<div class="content">
+				<h2>Contact us</h2>
+				<div class="contact-toggle">
+					<div class="project">
+						<%= link_to '#contact' do %>
+							<%= image_tag( "start_icon.png", alt: "start your project" )  %>
+							<span>Start your Project</span>
+						<% end %>
+						<span class="dot"><span></span></span>
+						<hr>
+					</div>
+					
+					<div class="team">
+						<%= link_to '#contact', id: "joinus" do %>
+							<%= image_tag( "join_icon.png", alt: "join icon" )  %>
+							<span>Join our team</span>
+						<% end %>
+						<span class="dot"><span></span></span>
+						<hr>
+					</div>
+				</div>
+				<form>
+					<div>
+						<input type="text" placeholder="Name" />
+						<input type="email" placeholder="Email" />
+					</div>
+					<div>
+						<input type="text" placeholder="Company name" />
+						<input type="industry" placeholder="Industry" />
+					</div>
+					<textarea class="error" placeholder="More details about your projet"></textarea>
+					
+				</form>
+				<button class="button" type="submit" value="Send">Send</button>/>
+			</div>
+		</section>
+	</div>
+</div>
+
